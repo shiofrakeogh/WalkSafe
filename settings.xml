@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home" />
+
+    <Button
+        android:text="Select Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectContact" />
+
+    <Button
+        android:text="Enter Pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7" />
+</LinearLayout>
