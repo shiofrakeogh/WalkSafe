@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\602d4973183290caa650b79b2c401d0b8c3abe33\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e627dcae0af2be1e387a8e85f685a6a9b5c564f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\d8fbf58de4e9564a25f77f878dda12d56fb80e8e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3762ec0ecffd973659875cccece79bb811fac004\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\370d75e51d3f07d796c29897b9eb6721dd1dcf3f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dfe54fbaf4f2a27d395ddf806d0c011170999e0">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c3a15113e3176e90c743736c043acdc8c72edcd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\0539b24e26b53ba918de4daca24e5c54fc94ec3f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8bae0ae9b368feccb299b11e55c56597769a5561\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\512ad85e85eb9c4a95d58ceac1c3ad849e604021\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec7d3099b4e3cf23230c78acaae438f3371e1c19">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5ddfb5601c52baac8b54e37db6661beee99c6ac9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\666b6d934e7253db4216b417a87640f32322626f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="125bce1fb2d481b964fabf75f0949957ebe9ecd1">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c58fc073bb4cc1410b3ae81ab8aae849c5fc78bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\c22cd58d4e630510be67a80d505d2c287ce56c0f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2a41a18144f538eae6f54b7011b892200429bc73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\093d83f749938c1ef060a8b9db54bc9aefe4ca40\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44098e691b36776973374ac03afe0225b17f8a74">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8b8b3fda2f8937a4767d104d51754c5fe5b51858\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\3aabe0b0a07aa987cc8cf494c901ea14c702524f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f233cb35a6ea92364130d2d48791c461ec65983">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_45713f9909d8edb5162804a39500ea1a58a0be68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\b3eeb8db3e50aa25c2df50db40ef9d975e05fd96\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ff807c9a47f96756c3bdf2da9f41b4b5bfed2320\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\3cc3e3469978b4e063392aaaa81ed342284e24b7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3a2d1588c3d2a9cddee01940b09bfef1b8cfa67c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\09880d6f396d699c6205e388cee1445843e385fc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_db06d1b6227e01a3de99112fdc4e01b130a37665\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\bfdafe4f810de08b2f933e49a172867ff93779dd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b5d75567a4ff8a3693d5a3651375a6cd71103e66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\822a28e3c4213cefa9b481ec785ec38a8ed26f15\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5daa6b19e969756983d3c97a88e2633873011133\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\b753d131c67fc3c693de23e17095b2459bf9e7f7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0bb2f0934fa55799508ba58ffc9ba579b35744b8">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72e7fc9cfb1cd5eded090eea83302b609f7593ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\7f8f507f248b882fc79d5cd64c41b250c1b22c64\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb004ea36f8802bad30000e286c177691740a322">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6b1ccd930fc52b74956fc6ba3dcd7258219d7de0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\d8a179f9a6f11894e5fc240461bddf66883e961f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_af28033a583c5ac7189d0208b46fa4f214626bfe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\5cd53a57cb296dc6680d1de15bda077fe6f0325d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d10b59818cfd5a28793916367eb92a86a65c4b95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\408118ce3fc6aeefe5904462c3fc44ea638e173c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b703447e3442cc2c07977bbaef8a8de834559af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\6ac7beedff6527cd41c537dfe1f2065de47758fd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ee29abfc804ebd51d65a4bde424c0ee74363939">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9677b7c0494bd59856842e7950867ec7f662b466\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\c1ad90fa7a183bab4e8a67f895706fe0e8b54a88\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a357f9b8e39a38bc70560dd8e58bfbec14ed80d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\da601208760570814aff091661e3072d78c32d90\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c9557315c0baf27194a011e1617dea9c0adb6b88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\ca77101348d68c9ae0efe6253010ebbe9fe53225\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="536fd6afd6e1280607c5d70306eb32d385db7964">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e78ce980b08487ef891a9df6f4089d8432f6344\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\ef5b87c6ca65c6ecfa3037171190538b2d40efd0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_178efb958d7770b081e03c0dd08aa2c89a985f11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\50ebf277c06ada4517aa521660bed33956a75d59\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cce5792fa30ee8520620f298bf920309423b180f">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f30e83ff6981c65533738518c313360b2cde5f8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\b3eeb8db3e50aa25c2df50db40ef9d975e05fd96\output\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_94b8874e26868f06c0e6ac996f7372dec622e4b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\9c811e6c0583479810edad915635ea14261a1ce0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d395c5142f474891c7750f13b6a85d14682f166b">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a4fcab92b08ad561c36a8f76e9e3baa2f9f77a0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\2d8046253411c94938900c5be465cfb2bd7fd4a1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dbae35d7fc3427d30bef0037bdf61ad0d8d984f8">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_67ce2431cc847a69e1d6a096c394dde659a0d5f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\72539af6248fb5257774a2b4a21df69ab6d70d06\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c74dab42788b458960618238f338d324b6f0656">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a0515351948627a1d86753b3d01dd791a5e71c8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\b7875fa5a56368cba9e90783e60951083b9d60aa\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1b4d79328ed7ef433ac79ff5c87d88ac60199dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2449bfd2ad7f8e6545dfa75c55811e477a5dfe2c">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fb776a493d139aeb8547977b41dd60b8c45603b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\57758543c94414a2e31b7e14d2eed69f8f3b4c5d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_169d22b77b3d64f269f6be1a498a01f594a23f6d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\889fe5fd2313c878694fe88941f7b33c307391f1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fd8ed5a16ae4f28d753dfab8564d32a6ab3858e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\cf1214d4484655dae766671f58f6b4410999203a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5c606c36276a12a356e351882044c6b4b9e8d4">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1420d752db30e07d2ddbf41bdcb11846a4a2faae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\aa44cf8d84694dc8af4c88b8010844403dd6ecc4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="825c2e97a00df4df5b0f3081faa4fd6280cd7c72">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_428d3af30dcafcd56e0bc57d68531c56d2b9dbb3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cc7d0a95263f009506fd59a0b5c24f30c6f0447f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\17cf7633207e5b6aa0955a307cc75837c5d5a431\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7ba26433d9e9f4429d83ff65ad79bfc801dc00a">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3795284b5a7eb3e440bfe2ac92bfd2251f9d9886\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\dda24387bf0bf77ca5bb27dc2c940bf31e6e29d6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_97caf325d3c0cd7861326331109c1d0ca7bd9358\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\5d67521d22d4e5da0a12e2273c9d8b1fc03a5d93\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_70b628b57403164dd5593622fb3b91b938acd86f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\e5bcad74d87fddbb56822d4067c2c09b3d47c7a1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab8343c3aadefce37313ceadd8bc4db1993f2ff0">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b713e1504fe54c23c0145149c2b9be766619d3da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\2152b8ab26b4008c9ae21795a158a4b57827b0f0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3b2cb8def8c89fd585f28ac3641fd91999f124dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\4b8dd1961cec1542e4a2412ede416bd4b2acca55\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a40c1651b812f0d88b53751a2998c2ee7b81facd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\9dba5a3211e697c2d98e5add286378fcd47f0656\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_228d8ea6fe3518a371844d706d7cf2a24c30cacb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\ce01adbb7a8b2c8c7dc9bc07c298410b2e8fe496\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7fa1879aa6fe9f8db4c750134fac8a8b32d78d30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\79ca6939a0968cb8badeb420b5d0555c5dad225a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0f5fd46e185291fd0355de092c1b0014a081034a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\bbf3d82f49b9f447aa44ec4fb080d363b2444ef3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3683531139103cc263b71d8b5ac6062832a8fd30">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7c3f3f9bda60f85f55600de5d306d9cc43df204b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\002dea168132e1d9858596c4b9839ddf52478df3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b136ac09f209c1d91fec7db8518e33d4373c8f39">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b8cc8f202ad02d238460837dc84d9f54fcb448c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\3de1832701056b2279ebd5149560cf41e5452f77\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bfd85a88cf976eb2c54507cc914d8e8914c2f71e">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8d3da588f13361dac0a18d827ebaa4de56af3040\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\USER\.android\build-cache\3e4e02c433b68631fd72ff3a8639ff902995b7b0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d81a3b0a16f48b4456f442552b62f4b1a472ce24">
+        <dex dex="C:\Users\USER\Desktop\Walksafely\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55d70121571dcb66799d1cdbce3d4ae4cfe19ec8\classes.dex" />
+    </item>
+
+</items>
