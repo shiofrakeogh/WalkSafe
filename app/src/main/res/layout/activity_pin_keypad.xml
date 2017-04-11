@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="5"
+    android:orientation="horizontal"
+    android:rowCount="9">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="center|fill"
+        android:layout_marginBottom="5dp"
+        android:layout_row="0"
+        android:text="@string/accessid" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="center|fill"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="text|textPassword"
+        android:textSize="25dp">
+
+        <requestFocus />
+    </EditText>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="96dp"
+        android:layout_height="55dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="@string/btn1"
+        android:layout_column="0"
+        android:layout_margin="5dp"
+        android:layout_row="4"/>
+    <Button
+        android:id="@+id/btn2"
+        android:text="@string/btn2"
+        android:layout_column="1"
+        android:layout_margin="5dp"
+        android:layout_row="4"/>
+    <Button
+        android:id="@+id/btn3"
+        android:text="@string/btn3"
+        android:layout_column="2"
+        android:layout_margin="5dp"
+        android:layout_row="4"/>
+    <Button
+        android:id="@+id/btn4"
+        android:text="@string/btn4"
+        android:layout_column="0"
+        android:layout_margin="5dp"
+        android:layout_row="5"/>
+    <Button
+        android:id="@+id/btn5"
+        android:text="@string/btn5"
+        android:layout_column="1"
+        android:layout_margin="5dp"
+        android:layout_row="5"/>
+    <Button
+        android:id="@+id/btn6"
+        android:text="@string/btn6"
+        android:layout_column="2"
+        android:layout_margin="5dp"
+        android:layout_row="5"/>
+    <Button
+        android:id="@+id/btn7"
+        android:text="@string/btn7"
+        android:layout_column="0"
+        android:layout_margin="5dp"
+        android:layout_row="6"/>
+    <Button
+        android:id="@+id/btn8"
+        android:text="@string/btn8"
+        android:layout_column="1"
+        android:layout_margin="5dp"
+        android:layout_row="6"/>
+    <Button
+        android:id="@+id/btn9"
+        android:text="@string/btn9"
+        android:layout_column="2"
+        android:layout_margin="5dp"
+        android:layout_row="6"/>
+
+    <Button
+        android:id="@+id/btnclear"
+        android:text="@string/btnclear"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+        android:layout_margin="5dp"
+        android:layout_row="7"/>
+
+    <Button
+        android:id="@+id/btn0"
+        android:text="@string/btn0"
+        android:layout_row="7"
+        android:layout_column="1"
+        android:layout_margin="5dp"/>
+</GridLayout>
