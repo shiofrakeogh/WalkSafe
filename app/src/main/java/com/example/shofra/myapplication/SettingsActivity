@@ -2,10 +2,13 @@ package eva.walksafe;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.audiofx.BassBoost;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceScreen;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -28,6 +31,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         public void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.settings_screen);
+
         }
 
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key){
@@ -61,6 +65,11 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             super.onBackPressed();
         }
     }
+
+
 }
+
+
+
 
 
