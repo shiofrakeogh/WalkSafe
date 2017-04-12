@@ -4,7 +4,7 @@
         android:title="Basic Settings">
         <EditTextPreference
             android:key="user_name"
-            android:summary="@string/summary"
+            android:summary="set username"
             android:title="User Name" />
 
         <ListPreference
@@ -13,5 +13,14 @@
             android:title="Message Preference"
             android:entries="@array/messages"
             android:entryValues="@array/messages"/>
+
+        <PreferenceScreen
+            android:title="Emergency Contact"
+            android:summary="Choose a contact to send message to"
+            android:key="contactsPreference">
+            <intent android:action="android.intent.action.VIEW"
+                android:targetPackage="eva.walksafe"
+                android:targetClass="eva.walksafe.ContactsActivity"/>
+        </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>
