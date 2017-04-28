@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="clickOn1_data" version="1.3.0" audacityversion="2.1.0" sel0="0.0000000000" sel1="0.3299677766" vpos="0" h="0.0000000000" zoom="363.6718750000" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags>
+		<tag name="GENRE" value="Blues"/>
+		<tag name="TITLE" value="click on sound"/>
+		<tag name="ARTIST" value="SoundBible.com"/>
+	</tags>
+	<wavetrack name="Click On-SoundBible.com-1697535117" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="14552">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000d43.au" len="14552" min="-0.975805" max="0.990689" rms="0.022958"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Click On-SoundBible.com-1697535117" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="14552">
+				<waveblock start="0">
+					<simpleblockfile filename="e000057b.au" len="14552" min="-0.941805" max="0.824062" rms="0.020748"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
