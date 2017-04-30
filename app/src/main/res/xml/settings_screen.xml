@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
-        android:title="Basic Settings"
-        android:background="#1FABDE">
-        <EditTextPreference
-            android:key="user_name"
-            android:summary="set username"
-            android:title="User Name"/>
-
+        android:title="Basic Settings">
         <ListPreference
             android:key="message_preferences"
             android:summary="%s"
@@ -17,7 +11,6 @@
 
         <CheckBoxPreference
             android:key="vibration"
-            android:summary="If selected, your device will vibrate when button pressed"
             android:title="Vibration Preferences"
             android:defaultValue="false"/>
     </PreferenceCategory>
