@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -71,12 +73,9 @@ public class MainActivity extends AppCompatActivity
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
                     vibe.cancel();
                     button.setBackgroundResource(R.drawable.button1);
-                    //Start a timer
-                    //Toast.makeText(getApplicationContext(), "Enter your pin", Toast.LENGTH_LONG).show();
-                    start();
-                    Intent intent = new Intent(MainActivity.this, PinKeypadActivity.class);
-                    PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
-                    ((AlarmManager) getSystemService(ALARM_SERVICE)).set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
+                    Intent intent = new Intent(getApplicationContext(), PinKeypadActivity.class);
+                    //Starts the PinKeypadActivity
+                    startActivityForResult(intent, 2);
                 }
                 return true;
             }
@@ -99,34 +98,6 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        /*SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        String username = prefs.getString("user_name", null);
-        String phoneNumber = contactData.retrieveContactNumber();*/
-
-        /*SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        String message = prefs.getString("message_preferences",null);
-        editor.apply();*/
-
-        /*TextView text = (TextView)findViewById(R.id.textTest);
-        text.setText("Message is: " + message);*/
-
-        Button test = (Button)findViewById(R.id.testbtn);
-
-        test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String number = database.retrieveContact();
-                if(number != null) {
-                    Toast.makeText(getApplicationContext(), "Number from database is " + number, Toast.LENGTH_LONG).show();
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "No contact chosen", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-
     }
 
     @Override
@@ -136,12 +107,6 @@ public class MainActivity extends AppCompatActivity
         SharedPreferences.Editor editor = prefs.edit();
         vibratorsettings = prefs.getBoolean("vibration",false);
         editor.apply();
-    }
-
-    //starts the pin keypad activity
-    public void start(){
-        intent = new Intent(this,PinKeypadActivity.class);
-        startActivityForResult(intent, 2);
     }
 
     public void setPin(){
@@ -225,6 +190,31 @@ public class MainActivity extends AppCompatActivity
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phoneno, null, setmessage, null, null);
             Toast.makeText(getApplicationContext(), "SMS Sent!", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "SMS failed, please try again later!", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+    }
+
+    public void sendLocationSMS(String chosenNumber, Location currentLocation) {
+
+        Toast.makeText(getApplicationContext(), "number is " + chosenNumber, Toast.LENGTH_LONG).show();
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        try {
+
+            String phoneno = chosenNumber;
+            SmsManager smsManager = SmsManager.getDefault();
+
+            StringBuffer smsBody = new StringBuffer();
+            smsBody.append("https://www.google.ie/maps/");
+            smsBody.append(currentLocation.getLatitude());
+            smsBody.append(", ");
+            smsBody.append(currentLocation.getLongitude());
+            smsManager.sendTextMessage(chosenNumber, null, smsBody.toString(), null, null);
+
+            Toast.makeText(getApplicationContext(), "SMS Sent!", Toast.LENGTH_LONG).show();
+
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "SMS failed, please try again later!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
