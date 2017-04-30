@@ -18,18 +18,11 @@
         android:id="@+id/button"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/button1"/>
+        android:background="@drawable/button1"/><![CDATA[
 
-    <Button
-        android:text="@string/pin_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/set_contact_btn"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="33dp"
-        android:layout_marginEnd="33dp"
-        android:id="@+id/set_pin_btn" />
+    />
+
+    ]]>
 
     <TextView
         android:layout_width="300dp"
@@ -48,9 +41,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/set_contact_btn"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/settingsbuttons"
+        android:textColor="#1FABDE"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textTest"
-        android:layout_alignStart="@+id/textTest"
-        android:layout_marginBottom="44dp" />
+        android:layout_alignStart="@+id/textTest" />
+
+    <Button
+        android:text="@string/pin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_pin_btn"
+        android:background="@drawable/settingsbuttons"
+        android:textColor="#1FABDE"
+        android:layout_alignBaseline="@+id/set_contact_btn"
+        android:layout_alignBottom="@+id/set_contact_btn"
+        android:layout_alignRight="@+id/textTest"
+        android:layout_alignEnd="@+id/textTest"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
 
 </RelativeLayout>
