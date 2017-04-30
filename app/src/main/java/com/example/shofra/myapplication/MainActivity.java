@@ -1,20 +1,21 @@
 package eva.walksafe;
 
 import android.app.AlarmManager;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
+import android.support.transition.Fade;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsManager;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -22,15 +23,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.content.Intent;
-import static java.security.AccessController.getContext;
+import android.os.Vibrator;
+
 
 public class MainActivity extends AppCompatActivity
 {
     Intent intent;
     View view;
     private Data database = new Data(this);
-    String chosenNumber;
+    Vibrator vibe;
+    boolean vibratorsettings;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -44,20 +47,36 @@ public class MainActivity extends AppCompatActivity
         Button pinbtn = (Button)findViewById(R.id.set_pin_btn);
         Button contactbtn = (Button)findViewById(R.id.set_contact_btn);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        vibratorsettings = prefs.getBoolean("vibration",false);
+        editor.apply();
+
         final Button button = (Button) findViewById(R.id.button);
         button.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN) {
                     button.setBackgroundResource(R.drawable.button_pressed);
+                    if(vibratorsettings){
+                        vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+                        long[] pattern = {0, 10000, 100000};
+                        vibe.vibrate(pattern, 0);
+                    }
+                    else {
+                        vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                        vibe.vibrate(0);
+                    }
 
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    button.setBackgroundResource(R.drawable.button);
+                    vibe.cancel();
+                    button.setBackgroundResource(R.drawable.button1);
                     //Start a timer
                     //Toast.makeText(getApplicationContext(), "Enter your pin", Toast.LENGTH_LONG).show();
                     start();
-                    //PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
-                    //((AlarmManager) getSystemService(ALARM_SERVICE)).set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 1000, pendingIntent);
+                    Intent intent = new Intent(MainActivity.this, PinKeypadActivity.class);
+                    PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
+                    ((AlarmManager) getSystemService(ALARM_SERVICE)).set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
                 }
                 return true;
             }
@@ -77,8 +96,8 @@ public class MainActivity extends AppCompatActivity
                 intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
                 //get contact
                 startActivityForResult(intent, 1);
-        }
-    });
+            }
+        });
 
         /*SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
@@ -88,9 +107,9 @@ public class MainActivity extends AppCompatActivity
         /*SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
         String message = prefs.getString("message_preferences",null);
-        editor.apply();
+        editor.apply();*/
 
-        TextView text = (TextView)findViewById(R.id.textTest);
+        /*TextView text = (TextView)findViewById(R.id.textTest);
         text.setText("Message is: " + message);*/
 
         Button test = (Button)findViewById(R.id.testbtn);
@@ -110,6 +129,15 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        vibratorsettings = prefs.getBoolean("vibration",false);
+        editor.apply();
+    }
+
     //starts the pin keypad activity
     public void start(){
         intent = new Intent(this,PinKeypadActivity.class);
@@ -120,6 +148,8 @@ public class MainActivity extends AppCompatActivity
         intent = new Intent(this,SetPinActivity.class);
         startActivityForResult(intent, 0);
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
@@ -150,7 +180,7 @@ public class MainActivity extends AppCompatActivity
                             String number = c.getString(0);
                             int type = c.getInt(1);
                             showSelectedNumber(type, number);
-                            chosenNumber = number;
+                            //chosenNumber = number;
                         }
                     } finally {
                         if (c != null) {
@@ -172,7 +202,7 @@ public class MainActivity extends AppCompatActivity
                     Toast.makeText(this, "You entered the right pin!!!!!", Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(this, "You didn't enter your pin, text will be sent", Toast.LENGTH_LONG).show();
-                    //sendSMS();
+                    sendSMS();
                 }
             }
         }
@@ -185,13 +215,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void sendSMS(){
-        //String number = database.retrieveContact();
-        Toast.makeText(getApplicationContext(), "number is " + chosenNumber, Toast.LENGTH_LONG).show();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        String setmessage = prefs.getString("message_preferences",null);
+        editor.apply();
+
         try {
-            String phoneno = chosenNumber;
-            String message = "Well from database";
+            String phoneno = database.retrieveContact();
             SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(chosenNumber, null, message, null, null);
+            smsManager.sendTextMessage(phoneno, null, setmessage, null, null);
             Toast.makeText(getApplicationContext(), "SMS Sent!", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "SMS failed, please try again later!", Toast.LENGTH_LONG).show();
@@ -218,6 +250,7 @@ public class MainActivity extends AppCompatActivity
      if (id == R.id.action_settings) {
          Intent intent = new Intent(this,SettingsActivity.class);
          startActivity(intent);
+         overridePendingTransition(R.anim.up_in, R.anim.up_out);
          //return true;
      }
 
