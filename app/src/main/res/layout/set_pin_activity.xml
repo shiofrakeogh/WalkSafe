@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#00004C">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:ems="10"
         android:layout_marginTop="155dp"
         android:id="@+id/editPin"
         android:gravity="center"
         android:hint="@string/enter_pin"
+        android:textColorHint="#1FABDE"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:imeOptions="actionNext"/>
+        android:imeOptions="actionNext"
+        android:textColor="#1FABDE"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:ems="10"
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/editPin"
@@ -27,7 +30,9 @@
         android:id="@+id/confirmPin"
         android:gravity="center"
         android:hint="@string/confirm_pin"
-        android:imeOptions="actionDone"/>
+        android:textColorHint="#1FABDE"
+        android:imeOptions="actionDone"
+        android:textColor="#1FABDE"/>
 
     <Button
         android:text="@string/save"
@@ -36,5 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="99dp"
-        android:id="@+id/save_pin" />
+        android:id="@+id/save_pin"
+        android:background="@drawable/settingsbuttons"
+        android:textColor="#1FABDE"/>/>
 </RelativeLayout>
