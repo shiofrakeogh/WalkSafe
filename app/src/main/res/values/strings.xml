@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
     <string name="btn1">1</string>
     <string name="btn2">2</string>
     <string name="btn3">3</string>
@@ -22,9 +22,12 @@
     <string name="contacts_image">Contacts Image</string>
 
     <string-array name="messages">
-        <item>In an unsafe area and feel threatened</item>
-        <item>Am in a bad state and need a taxi</item>
-        <item>Could use an ambulance</item>
+        <item>I'm in an unsafe area and feel threatened, here is my location.</item>
+        <item>Could you call a taxi for me, here is my location.</item>
+        <item>Will you ring me please, this is my location.</item>
+        <item>Help, I think someone is following me, here is my location.</item>
+        <item>I'm in trouble, here is my location.</item>
+
     </string-array>
     <string name="title_activity_settings">Settings</string>
 
@@ -99,7 +102,7 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
-    <string name="contact_btn">Choose Contact</string>
+    <string name="contact_btn">Contacts</string>
     <string name="pin_btn">Set PIN</string>
     <string name="enter_pin">Enter PIN</string>
     <string name="confirm_pin">Confirm PIN</string>
