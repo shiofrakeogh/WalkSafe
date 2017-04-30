@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -28,7 +30,7 @@ public class SetPinActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (setpin.getText().toString().length() == 0 || confirmpin.getText().toString().length() == 0) {
-                    Toast.makeText(getApplicationContext(), "You didn't fill both fields dummy", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "You need to fill in both fields", Toast.LENGTH_LONG).show();
                 } else {
                     if (setpin.getText().toString().equals(confirmpin.getText().toString())) {
                         Toast.makeText(getApplicationContext(), "PINs match", Toast.LENGTH_SHORT).show();
@@ -39,6 +41,9 @@ public class SetPinActivity extends AppCompatActivity {
                         finish();
                     } else {
                         Toast.makeText(getApplicationContext(), "PINs don't match", Toast.LENGTH_LONG).show();
+                        Animation shake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
+                        confirmpin.startAnimation(shake);
+                        confirmpin.setText("");
                     }
                 }
             }
