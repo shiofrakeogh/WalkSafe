@@ -40,16 +40,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             addPreferencesFromResource(R.xml.settings_screen);
             //PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
 
-            Preference namePref = findPreference("user_name");
-            namePref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
-                @Override
-                public boolean onPreferenceChange(Preference pref, Object newValue){
-                    pref.setSummary((String) newValue);
-                    return true;
-                }       //need this in onPause and onResume.
-            });
-
-
             Preference vibratorsettings = findPreference("vibration");
             vibratorsettings.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference pref, Object newValue) {
@@ -63,31 +53,11 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             });
         }
 
-        SharedPreferences.OnSharedPreferenceChangeListener listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
-            public void onSharedPreferenceChanged (SharedPreferences sharedPreferences, String key){
-            if (key.equals("user_name")) {
-                Preference pref = findPreference(key);
-                pref.setSummary(sharedPreferences.getString(key, ""));
-                }
-            }
-        };
-
 
         @Override
         public void onResume() {
             //getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(listener);
             super.onResume();
-
-            Preference namePref = findPreference("user_name");
-            namePref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
-                @Override
-                public boolean onPreferenceChange(Preference pref, Object newValue){
-                    pref.setSummary((String) newValue);
-                    return true;
-                }       //need this in onPause and onResume.
-            });
-
-
             Preference vibratorsettings = findPreference("vibration");
             vibratorsettings.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference pref, Object newValue) {
@@ -105,17 +75,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         public void onPause() {
             //getPreferenceScreen().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(listener);
             super.onPause();
-
-            Preference namePref = findPreference("user_name");
-            namePref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
-                @Override
-                public boolean onPreferenceChange(Preference pref, Object newValue){
-                    pref.setSummary((String) newValue);
-                    return true;
-                }       //need this in onPause and onResume.
-            });
-
-
             Preference vibratorsettings = findPreference("vibration");
             vibratorsettings.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference pref, Object newValue) {
