@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity
     Vibrator vibe;
     boolean vibratorsettings;
     String username;
+    GPSTracker gps;
+    double longitude;
+    double latitude;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -55,6 +60,7 @@ public class MainActivity extends AppCompatActivity
         editor.apply();
 
         final Button button = (Button) findViewById(R.id.button);
+
         button.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -97,6 +103,23 @@ public class MainActivity extends AppCompatActivity
                 startActivityForResult(intent, 1);
             }
         });
+
+        gps = new GPSTracker(this);
+        // check if GPS enabled
+        if(gps.canGetLocation()){
+
+            latitude = gps.getLatitude();
+            longitude = gps.getLongitude();
+
+            // \n is for new line
+            //Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+            //text.setText("https://www.google.ie/maps/@" + latitude + ", " + longitude);
+        }else{
+            // can't get location
+            // GPS or Network is not enabled
+            // Ask user to enable GPS/network in settings
+            gps.showSettingsAlert();
+        }
 
     }
 
@@ -188,39 +211,13 @@ public class MainActivity extends AppCompatActivity
         try {
             String phoneno = database.retrieveContact();
             SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(phoneno, null, setmessage, null, null);
+            smsManager.sendTextMessage(phoneno, null, setmessage+ "\n" + "https://www.google.ie/maps/?q=" + latitude + "," + longitude + "\nSent from WalkSafe app", null, null);
             Toast.makeText(getApplicationContext(), "SMS Sent!", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(), "SMS failed, please try again later!", Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
     }
-
-    public void sendLocationSMS(String chosenNumber, Location currentLocation) {
-
-        Toast.makeText(getApplicationContext(), "number is " + chosenNumber, Toast.LENGTH_LONG).show();
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        try {
-
-            String phoneno = chosenNumber;
-            SmsManager smsManager = SmsManager.getDefault();
-
-            StringBuffer smsBody = new StringBuffer();
-            smsBody.append("https://www.google.ie/maps/");
-            smsBody.append(currentLocation.getLatitude());
-            smsBody.append(", ");
-            smsBody.append(currentLocation.getLongitude());
-            smsManager.sendTextMessage(chosenNumber, null, smsBody.toString(), null, null);
-
-            Toast.makeText(getApplicationContext(), "SMS Sent!", Toast.LENGTH_LONG).show();
-
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(), "SMS failed, please try again later!", Toast.LENGTH_LONG).show();
-            e.printStackTrace();
-        }
-    }
-
 
    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
