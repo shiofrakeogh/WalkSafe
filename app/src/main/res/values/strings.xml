@@ -22,11 +22,11 @@
     <string name="contacts_image">Contacts Image</string>
 
     <string-array name="messages">
-        <item>I'm in an unsafe area and feel threatened, here is my location.</item>
+        <item>I am in an unsafe area and feel threatened, here is my location.</item>
         <item>Could you call a taxi for me, here is my location.</item>
         <item>Will you ring me please, this is my location.</item>
         <item>Help, I think someone is following me, here is my location.</item>
-        <item>I'm in trouble, here is my location.</item>
+        <item>I am in trouble, here is my location.</item>
 
     </string-array>
     <string name="title_activity_settings">Settings</string>
