@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Basic Settings">
+        <ListPreference
+            android:key="message_preferences"
+            android:summary="%s"
+            android:title="Message Preference"
+            android:entries="@array/messages"
+            android:entryValues="@array/messages"/>
+
+        <CheckBoxPreference
+            android:key="vibration"
+            android:title="Vibration Preferences"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
